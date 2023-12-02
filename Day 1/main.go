@@ -51,7 +51,7 @@ func part2() {
 
 	scanner := bufio.NewScanner(file)
 
-	pattern := regexp.MustCompile(`(?:[1-9]|one|two|three|four|five|six|seven|eight|nine)`)
+	pattern := regexp.MustCompile(`[1-9]|one|two|three|four|five|six|seven|eight|nine`)
 	values := map[string]int{
 		"1":     1,
 		"one":   1,
